@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyKata.Tests", "MonopolyKata.Tests\MonopolyKata.Tests.csproj", "{09BF0905-782B-4D86-B559-7BDF6B307B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyKata", "MonopolyKata\MonopolyKata.csproj", "{7D3513FF-4067-40AA-BA72-F89EB916BBC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09BF0905-782B-4D86-B559-7BDF6B307B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BF0905-782B-4D86-B559-7BDF6B307B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BF0905-782B-4D86-B559-7BDF6B307B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BF0905-782B-4D86-B559-7BDF6B307B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3513FF-4067-40AA-BA72-F89EB916BBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3513FF-4067-40AA-BA72-F89EB916BBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3513FF-4067-40AA-BA72-F89EB916BBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3513FF-4067-40AA-BA72-F89EB916BBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
