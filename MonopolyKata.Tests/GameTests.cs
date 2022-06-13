@@ -62,4 +62,15 @@ public class GameTests
         playersInOrder[0].Should().Be("Horse");
         playersInOrder[1].Should().Be("Car");
     }
+
+    [Fact]
+    public void Game_PlayedInFull_ShouldLastTwentyRounds()
+    {
+        _game.AddPlayer("Car");
+        _game.AddPlayer("Horse");
+
+        _game.Start();
+
+        _game.Round.Should().Be(20);
+    }
 }

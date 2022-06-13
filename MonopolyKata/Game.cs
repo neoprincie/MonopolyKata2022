@@ -2,6 +2,8 @@ namespace MonopolyKata;
 
 public class Game
 {
+    public int Round { get; private set; }
+    
     private List<string> _players;
     private readonly IDice _dice;
     
@@ -9,10 +11,6 @@ public class Game
     {
         _players = new List<string>();
         
-        // if (players.Count is < 2 or > 8)
-        //     throw new NumberOfPlayersException();
-        
-        //_players = players;
         _dice = dice;
     }
 
@@ -27,6 +25,8 @@ public class Game
     {
         if (_players.Count is < 2 or > 8)
             throw new NumberOfPlayersException();
+        
+        
     }
 
     public List<string> GetPlayersInOrder()
