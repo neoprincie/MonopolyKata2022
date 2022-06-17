@@ -2,10 +2,12 @@ namespace MonopolyKata;
 
 public class Game
 {
-    public int Round { get; private set; }
+    public int Rounds { get; private set; }
     
     private List<string> _players;
     private readonly IDice _dice;
+
+    private const int _maxRounds = 20;
     
     public Game(IDice dice)
     {
@@ -17,8 +19,6 @@ public class Game
     public void AddPlayer(string player)
     {
         _players.Add(player);
-        
-        ShufflePlayers();
     }
 
     public void Start()
@@ -26,7 +26,12 @@ public class Game
         if (_players.Count is < 2 or > 8)
             throw new NumberOfPlayersException();
         
-        
+        ShufflePlayers();
+
+        for (var i = 0; i < _maxRounds; i++)
+        {
+            Rounds++;
+        }
     }
 
     public List<string> GetPlayersInOrder()

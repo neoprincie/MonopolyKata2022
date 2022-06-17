@@ -51,11 +51,13 @@ public class GameTests
     [Fact]
     public void Game_GivenCarAndHorse_ShouldAllowForHorseAndCarOrdering()
     {
-        _game.AddPlayer("Car");
-        
         _mockDice.Roll().Returns(2, 3);
+        
+        _game.AddPlayer("Car");
         _game.AddPlayer("Horse");
     
+        _game.Start();
+        
         var playersInOrder = _game.GetPlayersInOrder();
     
         playersInOrder.Count().Should().Be(2);
@@ -71,6 +73,6 @@ public class GameTests
 
         _game.Start();
 
-        _game.Round.Should().Be(20);
+        _game.Rounds.Should().Be(20);
     }
 }
